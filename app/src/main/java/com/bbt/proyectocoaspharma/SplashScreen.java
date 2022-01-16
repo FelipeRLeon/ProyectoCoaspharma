@@ -12,7 +12,7 @@ import java.util.TimerTask;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private static final long SPLASH_SCREEN_DELAY = 1000;
+    private static final long SPLASH_SCREEN_DELAY = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class SplashScreen extends AppCompatActivity {
         TimerTask timerTask =  new TimerTask() {
             @Override
             public void run() {
-                Intent newIntent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent newIntent = new Intent(getApplicationContext(), MenuInicioActivity.class);
                 startActivity(newIntent);
                 finish();
             }
