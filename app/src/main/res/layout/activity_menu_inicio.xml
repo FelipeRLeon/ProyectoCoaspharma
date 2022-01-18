@@ -15,6 +15,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:background="#0F47EC"
+        android:onClick="BotonEspecialidad"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_medical_services"
         app:tint="#FFFFFF" />
@@ -35,6 +36,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#0F47EC"
+        android:onClick="BotonBusqueda"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_search_menu"
         app:tint="#FFFFFF" />
@@ -55,6 +57,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#0F47EC"
+        android:onClick="BotonCrearVisita"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_add_menu"
         app:tint="#FFFFFF" />
@@ -75,6 +78,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#0F47EC"
+        android:onClick="BotonEnlaces"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_link_menu"
         app:tint="#FFFFFF" />
@@ -95,6 +99,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#0F47EC"
+        android:onClick="BotonVisitasCreadas"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_bookmark_border_menu"
         app:tint="@color/white" />

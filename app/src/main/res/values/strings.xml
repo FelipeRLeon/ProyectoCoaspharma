@@ -8,4 +8,6 @@
     <string name="crear_visita">Crear visita</string>
     <string name="b_squeda">Búsqueda</string>
     <string name="especialidad">Especialidad</string>
+    <string name="enlaces">Enlaces</string>
+    <string name="visitas_creadas">Visitas creadas</string>
 </resources>

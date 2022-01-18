@@ -10,7 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoCoaspharma">
         <activity
+            android:name=".Principal.VisitasCreadasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Principal.EnlacesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Principal.CrearVisitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Principal.BusquedaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuInicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Principal.EspecialidadActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
