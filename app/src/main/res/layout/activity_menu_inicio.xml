@@ -10,89 +10,100 @@
 
     <ImageButton
         android:id="@+id/btnEspecialidad"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:background="#0F47EC"
-        app:srcCompat="@drawable/firstaidkit" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_medical_services"
+        app:tint="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Especialidad"
+        android:text="@string/especialidad"
         android:textColor="@color/white" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#0F47EC"
         android:scaleType="fitCenter"
-        app:srcCompat="@android:drawable/ic_menu_search" />
+        app:srcCompat="@drawable/ic_search_menu"
+        app:tint="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Búsqueda"
+        android:text="@string/b_squeda"
         android:textColor="@color/white" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#0F47EC"
         android:scaleType="fitCenter"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@drawable/ic_add_menu"
+        app:tint="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Crear visita"
+        android:text="@string/crear_visita"
         android:textColor="@color/white" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#0F47EC"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/linkicon" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_link_menu"
+        app:tint="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="Enlaces"
         android:textColor="@color/white" />
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#0F47EC"
         android:scaleType="fitCenter"
-        app:srcCompat="@android:drawable/ic_input_get" />
+        app:srcCompat="@drawable/ic_bookmark_border_menu"
+        app:tint="@color/white" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="Visitas creadas"
         android:textColor="@color/white" />
@@ -100,7 +111,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         app:srcCompat="@drawable/logo" />
 </LinearLayout>

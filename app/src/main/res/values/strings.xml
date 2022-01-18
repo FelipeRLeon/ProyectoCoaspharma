@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ProyectoCoaspharma</string>
+    <string name="bottom_nav_especial">Especialidad</string>
+    <string name="bottom_nav_busqueda">Busqueda</string>
+    <string name="bottom_nav_crearvisita">Crear Visita</string>
+    <string name="bottom_nav_enlaces">Enlaces</string>
+    <string name="bottom_nav_visitas">Visitas</string>
+    <string name="crear_visita">Crear visita</string>
+    <string name="b_squeda">Búsqueda</string>
+    <string name="especialidad">Especialidad</string>
 </resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_especialidad"
+        android:icon="@drawable/ic_medical_services"
+        android:title="@string/bottom_nav_especial" />
+    <item
+        android:id="@+id/page_busqueda"
+        android:icon="@drawable/ic_search_menu"
+        android:title="@string/bottom_nav_busqueda" />
+    <item
+        android:id="@+id/page_crearvisita"
+        android:icon="@drawable/ic_add_menu"
+        android:title="@string/bottom_nav_crearvisita" />
+    <item
+        android:id="@+id/page_enlaces"
+        android:icon="@drawable/ic_link_menu"
+        android:title="@string/bottom_nav_enlaces" />
+    <item
+        android:id="@+id/page_visitas"
+        android:icon="@drawable/ic_bookmark_border_menu"
+        android:title="@string/bottom_nav_visitas" />
+
+</menu>
