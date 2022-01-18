@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Enlaces"
+        android:text="@string/enlaces"
         android:textColor="@color/white" />
 
     <ImageButton
@@ -105,13 +105,14 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Visitas creadas"
+        android:text="@string/visitas_creadas"
         android:textColor="@color/white" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
         app:srcCompat="@drawable/logo" />
 </LinearLayout>
