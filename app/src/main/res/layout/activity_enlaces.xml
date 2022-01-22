@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B2FF59"
     android:orientation="vertical"
     tools:context=".Principal.EnlacesActivity">
 
@@ -35,34 +36,24 @@
             app:srcCompat="@drawable/logo" />
     </RelativeLayout>
 
-    <TableRow
+    <TextView
+        android:id="@+id/textView6"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="@string/enlaces"
+        android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
-            android:gravity="center"
-            android:text="@string/enlaces"
-            android:textSize="24sp" />
-    </TableRow>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemIconTint="@drawable/selector_bottom"
+        app:itemTextColor="@drawable/selector_bottom"
+        app:menu="@menu/bottom_nav_menu" />
 
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:gravity="bottom">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigator"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/white"
-            app:itemIconTint="@drawable/selector_bottom"
-            app:itemTextColor="@drawable/selector_bottom"
-            app:menu="@menu/bottom_nav_menu" />
-    </TableRow>
-
-</LinearLayout>
+</RelativeLayout>
