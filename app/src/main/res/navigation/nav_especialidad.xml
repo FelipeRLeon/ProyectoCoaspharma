@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_especialidad"
+    app:startDestination="@id/especialidadesMenuFragment">
+
+    <fragment
+        android:id="@+id/especialidadesMenuFragment"
+        android:name="com.bbt.proyectocoaspharma.Principal.especialidadfragments.EspecialidadesMenuFragment"
+        android:label="fragment_especialidades_menu"
+        tools:layout="@layout/fragment_especialidades_menu" />
+    <fragment
+        android:id="@+id/especialidadesImagenFragment"
+        android:name="com.bbt.proyectocoaspharma.Principal.especialidadfragments.EspecialidadesImagenFragment"
+        android:label="fragment_especialidades_imagen"
+        tools:layout="@layout/fragment_especialidades_imagen" >
+        <action
+            android:id="@+id/action_especialidadesImagenFragment_to_especialidadesListaFragment"
+            app:destination="@id/especialidadesListaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/especialidadesListaFragment"
+        android:name="com.bbt.proyectocoaspharma.Principal.especialidadfragments.EspecialidadesListaFragment"
+        android:label="fragment_especialidades_lista"
+        tools:layout="@layout/fragment_especialidades_lista" >
+        <action
+            android:id="@+id/action_especialidadesListaFragment_to_especialidadesInfografiaFragment"
+            app:destination="@id/especialidadesInfografiaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/especialidadesInfografiaFragment"
+        android:name="com.bbt.proyectocoaspharma.Principal.especialidadfragments.EspecialidadesInfografiaFragment"
+        android:label="fragment_especialidades_infografia"
+        tools:layout="@layout/fragment_especialidades_infografia" >
+        <action
+            android:id="@+id/action_especialidadesInfografiaFragment_to_especialidadesVideoFragment"
+            app:destination="@id/especialidadesVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/especialidadesVideoFragment"
+        android:name="com.bbt.proyectocoaspharma.Principal.especialidadfragments.EspecialidadesVideoFragment"
+        android:label="fragment_especialidades_video"
+        tools:layout="@layout/fragment_especialidades_video" >
+        <action
+            android:id="@+id/action_especialidadesVideoFragment_to_especialidadesPresentacionesFragment"
+            app:destination="@id/especialidadesPresentacionesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/especialidadesPresentacionesFragment"
+        android:name="com.bbt.proyectocoaspharma.Principal.especialidadfragments.EspecialidadesPresentacionesFragment"
+        android:label="fragment_especialidades_presentaciones"
+        tools:layout="@layout/fragment_especialidades_presentaciones" >
+        <action
+            android:id="@+id/action_especialidadesPresentacionesFragment_to_especialidadesMenuFragment"
+            app:destination="@id/especialidadesMenuFragment" />
+    </fragment>
+</navigation>

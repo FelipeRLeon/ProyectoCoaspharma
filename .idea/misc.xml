@@ -6,13 +6,19 @@
         <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/drawable/selector_bottom.xml" value="0.1" />
         <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_busqueda.xml" value="0.18" />
         <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_crear_visita.xml" value="0.25" />
-        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_enlaces.xml" value="0.1" />
-        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_especialidad.xml" value="0.22" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_enlaces.xml" value="0.25" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_especialidad.xml" value="0.14767932489451477" />
         <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_menu_inicio.xml" value="0.33" />
         <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
-        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_visitas_creadas.xml" value="0.1" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/activity_visitas_creadas.xml" value="0.33" />
         <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/custom_actionbar.xml" value="0.1" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/fragment_especialidades_imagen.xml" value="0.1" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/fragment_especialidades_infografia.xml" value="0.153125" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/fragment_especialidades_lista.xml" value="0.153125" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/fragment_especialidades_menu.xml" value="0.18020833333333333" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/fragment_especialidades_presentaciones.xml" value="0.153125" />
+        <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/layout/fragment_especialidades_video.xml" value="0.153125" />
         <entry key="..\:/EterBProgramas/AndroidProjects/Projects/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18" />
       </map>
     </option>

@@ -15,6 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class BusquedaActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,10 @@ public class BusquedaActivity extends AppCompatActivity {
                 switch(item.getItemId())
                 {
                     case R.id.page_especialidad:
-                        startActivity(new Intent(getApplicationContext(), EspecialidadActivity.class));
+                        intent = new Intent(getApplicationContext(), EspecialidadActivity.class);
+                        //intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
                         overridePendingTransition(0,0);
                         return true;
 
@@ -48,22 +52,38 @@ public class BusquedaActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.page_crearvisita:
-                        startActivity(new Intent(getApplicationContext(), CrearVisitaActivity.class));
+                        intent = new Intent(getApplicationContext(), CrearVisitaActivity.class);
+                        //intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
                         overridePendingTransition(0,0);
                         return true;
 
                     case R.id.page_enlaces:
-                        startActivity(new Intent(getApplicationContext(), EnlacesActivity.class));
+                        intent = new Intent(getApplicationContext(), EnlacesActivity.class);
+                        //intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
                         overridePendingTransition(0,0);
                         return true;
 
                     case R.id.page_visitas:
-                        startActivity(new Intent(getApplicationContext(), VisitasCreadasActivity.class));
+                        intent = new Intent(getApplicationContext(), VisitasCreadasActivity.class);
+                        //intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
                         overridePendingTransition(0,0);
                         return true;
                 }
                 return false;
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        bottomNavigationView = findViewById(R.id.bottom_navigator);
+        bottomNavigationView.setSelectedItemId(R.id.page_busqueda);
     }
 }

@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".Principal.EspecialidadActivity">
 
+
     <RelativeLayout
         android:id="@+id/app_bar_main"
         android:layout_width="match_parent"
@@ -38,14 +39,12 @@
             app:srcCompat="@drawable/logo" />
     </RelativeLayout>
 
-    <ScrollView
+    <!--<ScrollView
         android:id="@+id/scroll_especialidad"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottom_navigator"
         android:layout_below="@id/app_bar_main"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentEnd="false"
         android:layout_marginEnd="0dp"
         android:descendantFocusability="afterDescendants">
 
@@ -480,7 +479,17 @@
 
             </TableRow>
         </LinearLayout>
-    </ScrollView>
+    </ScrollView>-->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigator"
+        android:layout_below="@id/app_bar_main"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_especialidad" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigator"

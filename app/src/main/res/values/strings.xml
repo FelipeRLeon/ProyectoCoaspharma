@@ -10,4 +10,6 @@
     <string name="especialidad">Especialidad</string>
     <string name="enlaces">Enlaces</string>
     <string name="visitas_creadas">Visitas creadas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:gravity="center"
-        android:text="@string/enlaces"
+        android:text="@string/visitas_creadas"
         android:textSize="24sp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
