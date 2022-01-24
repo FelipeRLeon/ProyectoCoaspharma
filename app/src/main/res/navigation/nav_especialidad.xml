@@ -9,7 +9,11 @@
         android:id="@+id/especialidadesMenuFragment"
         android:name="com.bbt.proyectocoaspharma.Principal.especialidadfragments.EspecialidadesMenuFragment"
         android:label="fragment_especialidades_menu"
-        tools:layout="@layout/fragment_especialidades_menu" />
+        tools:layout="@layout/fragment_especialidades_menu">
+        <action
+            android:id="@+id/action_especialidadesMenuFragment_to_especialidadesImagenFragment"
+            app:destination="@id/especialidadesImagenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/especialidadesImagenFragment"
         android:name="com.bbt.proyectocoaspharma.Principal.especialidadfragments.EspecialidadesImagenFragment"
@@ -27,6 +31,9 @@
         <action
             android:id="@+id/action_especialidadesListaFragment_to_especialidadesInfografiaFragment"
             app:destination="@id/especialidadesInfografiaFragment" />
+        <action
+            android:id="@+id/action_especialidadesListaFragment_to_especialidadesMenuFragment"
+            app:destination="@id/especialidadesMenuFragment" />
     </fragment>
     <fragment
         android:id="@+id/especialidadesInfografiaFragment"
@@ -36,6 +43,12 @@
         <action
             android:id="@+id/action_especialidadesInfografiaFragment_to_especialidadesVideoFragment"
             app:destination="@id/especialidadesVideoFragment" />
+        <action
+            android:id="@+id/action_especialidadesInfografiaFragment_to_especialidadesPresentacionesFragment"
+            app:destination="@id/especialidadesPresentacionesFragment" />
+        <action
+            android:id="@+id/action_especialidadesInfografiaFragment_to_especialidadesMenuFragment"
+            app:destination="@id/especialidadesMenuFragment" />
     </fragment>
     <fragment
         android:id="@+id/especialidadesVideoFragment"
@@ -45,6 +58,12 @@
         <action
             android:id="@+id/action_especialidadesVideoFragment_to_especialidadesPresentacionesFragment"
             app:destination="@id/especialidadesPresentacionesFragment" />
+        <action
+            android:id="@+id/action_especialidadesVideoFragment_to_especialidadesInfografiaFragment"
+            app:destination="@id/especialidadesInfografiaFragment" />
+        <action
+            android:id="@+id/action_especialidadesVideoFragment_to_especialidadesMenuFragment"
+            app:destination="@id/especialidadesMenuFragment" />
     </fragment>
     <fragment
         android:id="@+id/especialidadesPresentacionesFragment"
@@ -54,5 +73,11 @@
         <action
             android:id="@+id/action_especialidadesPresentacionesFragment_to_especialidadesMenuFragment"
             app:destination="@id/especialidadesMenuFragment" />
+        <action
+            android:id="@+id/action_especialidadesPresentacionesFragment_to_especialidadesVideoFragment"
+            app:destination="@id/especialidadesVideoFragment" />
+        <action
+            android:id="@+id/action_especialidadesPresentacionesFragment_to_especialidadesInfografiaFragment"
+            app:destination="@id/especialidadesInfografiaFragment" />
     </fragment>
 </navigation>

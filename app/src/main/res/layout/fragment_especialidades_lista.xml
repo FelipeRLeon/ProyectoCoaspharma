@@ -17,11 +17,18 @@
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/btn3"
+        android:id="@+id/btn_infografia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:backgroundTint="#A6CAA5"
         android:text="Lita Medicacmentos" />
+    <Button
+        android:id="@+id/btn_cerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#A6CAA5"
+        android:text="Cerrar" />
 
 </LinearLayout>

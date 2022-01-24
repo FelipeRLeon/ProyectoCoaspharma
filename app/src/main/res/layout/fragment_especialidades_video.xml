@@ -17,11 +17,27 @@
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/btn4"
+        android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:backgroundTint="#A6CAA5"
         android:text="Presentaciones" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#A6CAA5"
+        android:text="Infografia" />
+
+    <Button
+        android:id="@+id/btn_cerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#A6CAA5"
+        android:text="Cerrar" />
 
 </LinearLayout>
