@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#448AFF"
-    tools:context=".Principal.especialidadfragments.EspecialidadesMenuFragment"
-    android:orientation="vertical">
+    android:background="#f5f5f5"
+    android:backgroundTint="#f5f5f5"
+    android:orientation="vertical"
+    tools:context=".Principal.especialidadfragments.EspecialidadesMenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tittleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#f5f5f5"
+        android:text="Especialidades"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRecyclerViewMenuEsp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Menu Especialidades"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTintMode="screen"
+        android:nestedScrollingEnabled="true">
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:backgroundTint="#C17979"
-        android:text="ImagenEsp" />
+    </androidx.recyclerview.widget.RecyclerView>
 
-</LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

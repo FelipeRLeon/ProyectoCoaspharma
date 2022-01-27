@@ -24,8 +24,9 @@ public class EspecialidadesListaFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View vista = inflater.inflate(R.layout.fragment_especialidades_lista, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_especialidades_lista, container, false);
+        return vista;
     }
 
     @Override
