@@ -16,9 +16,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.bbt.proyectocoaspharma.Principal.recyclerviews.ListMenuEsp;
+import com.bbt.proyectocoaspharma.Principal.recyclerviews.ListMenuEspAdapter;
 import com.bbt.proyectocoaspharma.R;
-import com.bbt.proyectocoaspharma.recyclerviews.ListMenuEsp;
-import com.bbt.proyectocoaspharma.recyclerviews.ListMenuEspAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +26,7 @@ import java.util.List;
 public class EspecialidadesMenuFragment extends Fragment {
 
     List<ListMenuEsp> elements;
-    RecyclerView recuclerMenuEsoLista;
-
+    RecyclerView recuclerMenuEspLista;
 
     public EspecialidadesMenuFragment() {
         // Required empty public constructor
@@ -36,17 +35,17 @@ public class EspecialidadesMenuFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View vista = inflater.inflate(R.layout.fragment_especialidades_menu, container, false);
-
-
 
         elements = new ArrayList<>();
         ListMenuEspAdapter listAdapter = new ListMenuEspAdapter(elements, getContext());
 
-        RecyclerView recyclerView =  vista.findViewById(R.id.listRecyclerViewMenuEsp);
+        RecyclerView recyclerView = vista.findViewById(R.id.listRecyclerViewMenuEsp);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        recyclerView.setAdapter(listAdapter);
+
         init();
 
         listAdapter.setOnClickListener(new View.OnClickListener() {
@@ -64,13 +63,16 @@ public class EspecialidadesMenuFragment extends Fragment {
 
         recyclerView.setAdapter(listAdapter);
 
+        // Inflate the layout for this fragment
         return vista;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
     }
+
     public void init() {
 
         elements.add(new ListMenuEsp("#3082cc", "Med General"));
